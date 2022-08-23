@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: url("https://www.addictivetips.com/app/uploads/2020/04/Yosemite.png") no-repeat;
+    background-size:cover;
+    /* background-color: aquamarine; */
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+    min-height: 100vh;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("https://www.addictivetips.com/app/uploads/2020/04/Yosemite.png");
+    background-size:cover;
+    margin:0;
+    overflow: hidden; */
+}
+.container{
+    background-color: rgb(255, 240, 254);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0) ; 
+
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+    
+   
+
+
+    /* background: #32323b;
+    border-radius: 10px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:250px;
+    padding:40px 60px;
+    box-shadow: 1px 1px 20px #171717; */
+}
+.header{
+    background-color:rgb(99, 42, 91);
+    padding: 20px 40px;
+    border-bottom:1px solid rgb(160, 155, 80) ;
+}
+.header h2{
+    margin:0;
+}
+.form{
+    padding: 20px 40px;
+}
+.form-control{
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    position:relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input {
+    border:2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width:100%;
+    font-family: 'Courier New', Courier, monospace;
+
+
+}
+.form-control select {
+    border:2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    padding: 10px; 
+    width:100%;
+    font-family: 'Courier New', Courier, monospace;
+
+
+}
+.form-control.success input{
+    border-color: rgb(80, 237, 132);
+}
+.form-control.error input{
+    border-color: rgb(235, 27, 27);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-control i{
+    position:absolute;   /* circles*/
+    top: 40px;
+    right:10px;
+    visibility: hidden;
+}
+.form-control.success i.fa-check-circle{
+    visibility: visible;
+    color: rgb(80, 237, 132) ;
+}
+.form-control.error i.fa-exclamation-circle{
+    visibility: visible;
+    color: rgb(235, 27, 27) ;
+}
+.form-control.error small{
+    visibility: visible;
+    color: rgb(235, 27, 27) ;
+
+
+}
+
+.form-control small{
+    position:absolute;
+    visibility: hidden;
+    /* bottom:0; */
+    left:0;
+
+
+}
+.form button{
+    background-color: aquamarine;
+    border:2px solid rgb(114, 228, 243);
+    display: block;
+    width:100%;
+    padding: 10px;
+    font-size: 16px;
+
+    color: #FFF;
+}
