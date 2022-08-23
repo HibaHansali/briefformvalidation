@@ -20,7 +20,7 @@ form.addEventListener("submit", (e) => {
     const fullNameValue = fullName.value.trim();
     // const usernameValue = userName.value.trim().toLowerCase();
     const emailValue = email.value.trim();
-    const genderValue = gender.value.trim();
+    const genderValue = gender.value;
     const ageValue = age.value.trim();
     const phoneNumberValue = phoneNumber.value.trim();
     const passwordValue = password.value.trim();
@@ -34,7 +34,7 @@ form.addEventListener("submit", (e) => {
         // focus element
         fullName.focus();
       } else if (fullNameValue.length < 3 || fullNameValue.length > 50) {
-        setErrorMessage(fullName, "This field minimum character is 5 and maximum character is 50. Please input at this range.");
+        setErrorMessage(fullName, "This field minimum character is 3 and maximum character is 50. Please input at this range.");
     
         // focus element
         fullName.focus();
@@ -137,6 +137,12 @@ if (passwordValue === "") {
   } else {
     // add success class
     setSuccessMessage(checkPassword);
+  }
+
+  if(genderValue=='default') {
+    setErrorMessage(gender, "Please select your gender");
+  }else{
+    setSuccessMessage(gender);
   }
 
   
